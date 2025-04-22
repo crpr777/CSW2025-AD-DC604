@@ -1,0 +1,136 @@
+{
+  "implant_config": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.110 Safari/537.36",
+    "chrome_base_version": 115,
+    "macos_version": "11_6_4",
+    "url_parameters": [
+      {
+        "name": "lang",
+        "value": "en",
+        "probability": 100
+      },
+      {
+        "name": "region",
+        "value": "ca",
+        "probability": 100
+      }
+    ],
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "probability": 100
+      },
+      {
+        "name": "Cache-Control",
+        "value": "max-age=0",
+        "probability": 100
+      }
+    ],
+    "max_files": 8,
+    "min_files": 2,
+    "max_paths": 8,
+    "min_paths": 2,
+    "stager_file_ext": ".woff2",
+    "stager_files": [
+      "open-sans-v17-latin-regular",
+      "open-sans-v17-latin-600",
+      "roboto-regular-webfont",
+      "roboto-bold-webfont",
+      "cbc-sans-regular"
+    ],
+    "stager_paths": [
+      "www",
+      "build",
+      "fonts",
+      "static"
+    ],
+    "poll_file_ext": ".js",
+    "poll_files": [
+      "cbc-common",
+      "site-nav",
+      "live-update",
+      "analytics",
+      "news-reader",
+      "vendor",
+      "polyfills",
+      "cbc-search"
+    ],
+    "poll_paths": [
+      "dist",
+      "js",
+      "scripts",
+      "bundles",
+      "public",
+      "vendor",
+      "libs",
+      "assets"
+    ],
+    "start_session_file_ext": ".html",
+    "session_file_ext": ".php",
+    "session_files": [
+      "user-login",
+      "session",
+      "account",
+      "auth",
+      "subscribe",
+      "profile",
+      "membership",
+      "feedback"
+    ],
+    "session_paths": [
+      "auth",
+      "account",
+      "user",
+      "subscription",
+      "news",
+      "feedback",
+      "profile",
+      "register"
+    ],
+    "close_file_ext": ".svg",
+    "close_files": [
+      "cbc-logo",
+      "favicon",
+      "apple-touch-icon"
+    ],
+    "close_paths": [
+      "assets",
+      "icons",
+      "images",
+      "media",
+      "static",
+      "uploads",
+      "cdn",
+      "img"
+    ]
+  },
+  "server_config": {
+    "random_version_headers": true,
+    "headers": [
+      {
+        "name": "X-Frame-Options",
+        "value": "DENY",
+        "probability": 100
+      },
+      {
+        "name": "Content-Security-Policy",
+        "value": "default-src 'self'",
+        "probability": 100
+      },
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains",
+        "probability": 100
+      }
+    ],
+    "cookies": [
+      "CBCSESSIONID",
+      "CFID",
+      "CFTOKEN",
+      "__cflb",
+      "TS0123456789",
+      "SC_ANALYTICS_GLOBAL_COOKIE"
+    ]
+  }
+}
